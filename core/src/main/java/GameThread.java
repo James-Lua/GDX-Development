@@ -1,5 +1,3 @@
-package info.cotr.gdx;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 

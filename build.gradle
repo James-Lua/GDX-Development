@@ -9,14 +9,21 @@ buildscript {
     maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots/' }
   }
   dependencies {
-
-
+    // No buildscript dependencies needed for now
   }
 }
 
 allprojects {
   apply plugin: 'eclipse'
   apply plugin: 'idea'
+
+  // Define versions here
+  ext {
+    gdxVersion = '1.12.0'
+    aiVersion = '1.8.2'
+    box2dVersion = '1.12.0'
+    projectVersion = '1.0'
+  }
 
   // This allows you to "Build and run using IntelliJ IDEA", an option in IDEA's Settings.
   idea {
